@@ -72,6 +72,32 @@ section.logo-section article h1 {
     font-weight: 500;
 }
 
+.site-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    min-height: 30px;
+}
+
+.copyright {
+    transform: translateY(50%);
+}
+
+#humaka-link {
+    color: #fff;
+    text-decoration: none;
+    /* cursor: pointer; */
+    transition: 0.3s ease;
+}
+
+#humaka-link:hover {
+    color: #00a2ff;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -94,6 +120,7 @@ section.logo-section article h1 {
     }
 
     .logo-section-image img {
+        margin-top: 10rem;
         height: unset;
         width: 100%;
     }
