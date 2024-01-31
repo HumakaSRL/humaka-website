@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap'); */
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 4pt;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    background-color: #444444;
+    background-image: url('../assets/images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+section.logo-section {
+    padding: 0 17.5vw;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+    color: #FFFFFF;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 12rem;
+    row-gap: 6rem;
+}
+
+.logo-section-image {
+    flex: 2;
+    animation: fadeIn 1.25s;
+}
+
+.logo-section-image img {
+    width: 100%;
+}
+
+section.logo-section article {
+    flex: 3;
+    width: min-content;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 1rem;
+    animation: fadeIn 1.25s;
+}
+
+section.logo-section article h1 {
+    font-size: 12rem;
+    font-weight: 700;
+}
+
+.description-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 7rem;
+    font-weight: 500;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    section.logo-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo-section-image {
+        height: unset;
+        width: max(50%, 240px);
+    }
+
+    .logo-section-image img {
+        height: unset;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 3pt;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section.logo-section {
+        padding: 0 3rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 2.5pt;
+    }
+
+    .logo-section-image {
+        width: 100%;
+    }
+}
